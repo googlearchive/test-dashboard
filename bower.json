@@ -1,0 +1,16 @@
+{
+  "name": "test-dashboard",
+  "version": "0.0.0",
+  "homepage": "https://github.com/polymer-projects/test-dashboard",
+  "authors": [
+    "Yvonne Yip <ykyyip@google.com>"
+  ],
+  "dependencies": {
+    "platform": "Polymer/platform#master",
+    "polymer": "Polymer/polymer#master",
+    "polymer-ajax": "polymer-elements/polymer-ajax#master",
+    "polymer-flex-layout": "polymer-elements/polymer-flex-layout#master"
+  },
+  "license": "BSD",
+  "private": true
+}
