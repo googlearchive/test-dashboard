@@ -8,8 +8,8 @@
   "dependencies": {
     "platform": "Polymer/platform#master",
     "polymer": "Polymer/polymer#master",
-    "polymer-ajax": "polymer-elements/polymer-ajax#master",
-    "polymer-flex-layout": "polymer-elements/polymer-flex-layout#master"
+    "polymer-ajax": "Polymer/polymer-ajax#master",
+    "polymer-flex-layout": "Polymer/polymer-flex-layout#master"
   },
   "license": "BSD",
   "private": true
