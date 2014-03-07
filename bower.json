@@ -1,15 +1,15 @@
 {
   "name": "test-dashboard",
-  "version": "0.0.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/polymer-projects/test-dashboard",
   "authors": [
     "Yvonne Yip <ykyyip@google.com>"
   ],
   "dependencies": {
-    "platform": "Polymer/platform#master",
-    "polymer": "Polymer/polymer#master",
-    "polymer-ajax": "Polymer/polymer-ajax#master",
-    "polymer-flex-layout": "Polymer/polymer-flex-layout#master"
+    "platform": "Polymer/platform#0.2.1",
+    "polymer": "Polymer/polymer#0.2.1",
+    "polymer-ajax": "Polymer/polymer-ajax#0.2.1",
+    "polymer-flex-layout": "Polymer/polymer-flex-layout#0.2.1"
   },
   "license": "BSD",
   "private": true
