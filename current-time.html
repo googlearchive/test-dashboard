@@ -1,0 +1,24 @@
+<polymer-element name="current-time">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <span id="time">{{time}}</span>
+  </template>
+  <script>
+    Polymer('current-time', {
+      attached: function() {
+        this.interval = setInterval(this.updateTime.bind(this), 500);
+      },
+      detached: function() {
+        clearInterval(this.interval);
+      },
+      updateTime: function() {
+        var d = new Date();
+        this.time = d.toLocaleTimeString();
+      }
+    });
+  </script>
+</polymer-element>

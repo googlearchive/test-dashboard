@@ -23,11 +23,17 @@
 		#container {
 			flex: 1;
 		}
+		#time {
+			font-size: 1.5em;
+			padding-right: 20px;
+			color: #a3a3a3;
+		}
 		img {
 			padding-right: 20px;
 		}
 	</style>
 	<link href="test-dashboard.html" rel="import">
+	<link rel="import" href="current-time.html">
 </head>
 <body class="polymer-ui-body-text">
 	<h1>
@@ -36,6 +42,7 @@
 			<span id="container">
 				<span style="color:#ff0000;" class="bigger">P</span><span style="color:#ffc000;">O</span><span style="color:#ffff00;">L</span><span style="color:#3fff00;">Y</span><span style="color:#00ff00;">M</span><span style="color:#00ffc0;">E</span><span class="bigger" style="color:#00ffff;">R</span><span class="ex" style="color:#00c0ff;">!</span>
 			</span>
+			<current-time id="time"></current-time>
 		</div>
 	</h1>
 	<test-dashboard></test-dashboard>
