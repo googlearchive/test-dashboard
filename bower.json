@@ -6,10 +6,8 @@
     "Yvonne Yip <ykyyip@google.com>"
   ],
   "dependencies": {
-    "platform": "Polymer/platform#>=0.3.0 <1.0.0",
-    "polymer": "Polymer/polymer#>=0.3.0 <1.0.0",
-    "polymer-ajax": "Polymer/polymer-ajax#>=0.3.0 <1.0.0",
-    "polymer-flex-layout": "Polymer/polymer-flex-layout#>=0.3.0 <1.0.0"
+    "font-roboto": "Polymer/font-roboto#~0.3.5",
+    "core-ajax": "Polymer/core-ajax#~0.3.5"
   },
   "license": "BSD",
   "private": true

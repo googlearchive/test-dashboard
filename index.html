@@ -2,46 +2,35 @@
 <html>
 <head>
 	<script src="components/platform/platform.js"></script>
+	<link href="test-dashboard.html" rel="import">
+	<link rel="import" href="project-name">
+	<link rel="import" href="current-time.html">
+	<link rel="import" href="components/font-roboto/roboto.html">
 	<style>
+		body {
+			font-family: 'RobotoDraft', sans-serif;
+		}
 		h1 {
-			font-family: 'Optima', 'Lucida Grande', sans-serif;
 			font-weight: normal;
 		}
-		.bigger {
-			font-size: 1.25em;
-		}
-		.ex {
-			display: inline-block;
-			font-size: 1.25em;
-			-webkit-transform: rotate(9deg);
-		}
-		.flex {
-			height: 140px;
-			display: flex;
-			align-items: center;
-		}
 		#container {
-			flex: 1;
+			min-height: 140px;
 		}
 		#time {
 			font-size: 1.5em;
 			padding-right: 20px;
-			color: #a3a3a3;
+			color: #9e9e9e;
 		}
 		img {
 			padding-right: 20px;
 		}
 	</style>
-	<link href="test-dashboard.html" rel="import">
-	<link rel="import" href="current-time.html">
 </head>
-<body class="polymer-ui-body-text">
+<body>
 	<h1>
-		<div class="flex">
+		<div id="container" layout center horizontal>
 			<img src="https://avatars2.githubusercontent.com/u/2159051?s=140">
-			<span id="container">
-				<span style="color:#ff0000;" class="bigger">P</span><span style="color:#ffc000;">O</span><span style="color:#ffff00;">L</span><span style="color:#3fff00;">Y</span><span style="color:#00ff00;">M</span><span style="color:#00ffc0;">E</span><span class="bigger" style="color:#00ffff;">R</span><span class="ex" style="color:#00c0ff;">!</span>
-			</span>
+			<project-name flex></project-name>
 			<current-time id="time"></current-time>
 		</div>
 	</h1>

@@ -1,4 +1,3 @@
-<link href="components/polymer-flex-layout/polymer-flex-layout.html" rel="import">
 <link href="buildbot-ajax-build.html" rel="import">
 <polymer-element name="test-dashboard-cell" attributes="builder response">
 	<template>
@@ -18,7 +17,7 @@
 				background-color: #fd3;
 			}
 		</style>
-		<buildbot-ajax-build builder="{{builder}}" response="{{response}}"></buildbot-ajax>
+		<buildbot-ajax-build builder="{{builder}}" response="{{response}}"></buildbot-ajax-build>
 		<template repeat="{{browser in response.browsers}}">
 			<template if="{{browser.success}}">
 				<span class="passed">{{browser.browser}} {{browser.version}}</span>

@@ -1,6 +1,6 @@
-<link href="components/polymer-ajax/polymer-ajax.html" rel="import">
+<link href="components/core-ajax/core-ajax.html" rel="import">
 <link href="buildbot-ajax-builder.html" rel="import">
-<polymer-element name="buildbot-ajax-build" extends="polymer-ajax" attributes="response builder" on-polymer-response="{{responseAction}}">
+<polymer-element name="buildbot-ajax-build" extends="core-ajax" attributes="response builder" on-core-response="{{responseAction}}">
 	<script>
 		Polymer('buildbot-ajax-build', {
 			handleAs: 'json',
