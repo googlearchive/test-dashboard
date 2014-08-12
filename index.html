@@ -9,6 +9,7 @@
 	<style>
 		body {
 			font-family: 'RobotoDraft', sans-serif;
+			overflow: hidden;
 		}
 		h1 {
 			font-weight: normal;
@@ -24,16 +25,73 @@
 		img {
 			padding-right: 20px;
 		}
+		lorem-pixel {
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			z-index: -1;
+		}
+
+		@keyframes dance {
+			from {
+				transform: translate3d(0, 0, 0);
+			}
+			25% {
+				transform: translate3d(20vw, 20vh, 0);
+			}
+			40% {
+				transform: translate3d(20vw, 0, 0);
+			}
+			75% {
+				transform: translate3d(0, 20vh, 0);
+			}
+			to {
+				transform: translate3d(0, 0, 0);
+			}
+		}
+
+		@-webkit-keyframes dance {
+			from {
+				transform: translate3d(0, 0, 0);
+			}
+			25% {
+				transform: translate3d(20vw, 20vh, 0);
+			}
+			40% {
+				transform: translate3d(20vw, 0, 0);
+			}
+			75% {
+				transform: translate3d(0, 20vh, 0);
+			}
+			to {
+				transform: translate3d(0, 0, 0);
+			}
+		}
+
+		#dancer {
+			position: fixed;
+			animation-name: dance;
+			animation-duration: 600s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			-webkit-animation-name: dance;
+			-webkit-animation-duration: 600s;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-timing-function: linear;
+		}
+
 	</style>
 </head>
 <body>
-	<h1>
-		<div id="container" layout center horizontal>
-			<img src="https://avatars2.githubusercontent.com/u/2159051?s=140">
-			<project-name flex></project-name>
-			<current-time id="time"></current-time>
-		</div>
-	</h1>
-	<test-dashboard></test-dashboard>
+	<div id="dancer">
+		<h1>
+			<div id="container" layout center horizontal>
+				<img src="https://avatars2.githubusercontent.com/u/2159051?s=140">
+				<project-name flex></project-name>
+				<current-time id="time"></current-time>
+			</div>
+		</h1>
+		<test-dashboard></test-dashboard>
+	</div>
 </body>
 </html>
