@@ -1,13 +1,13 @@
 {
   "name": "test-dashboard",
-  "version": "0.0.0",
+  "version": "0.5.0",
   "homepage": "https://github.com/polymer-projects/test-dashboard",
   "authors": [
     "Yvonne Yip <ykyyip@google.com>"
   ],
   "dependencies": {
-    "font-roboto": "Polymer/font-roboto#~0.3.5",
-    "core-ajax": "Polymer/core-ajax#~0.3.5"
+    "font-roboto": "Polymer/font-roboto#^0.5.0",
+    "core-ajax": "Polymer/core-ajax#^0.5.0"
   },
   "license": "BSD",
   "private": true
